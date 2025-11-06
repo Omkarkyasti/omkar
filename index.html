@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Omkar Kyasti • Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Omkar Kyasti – Software Engineer skilled in Python, Java, React.js, and SQL with experience in REST APIs, Spring Boot, and CI/CD." />
+  <link rel="canonical" href="https://your-domain.example/" />
+  <meta name="robots" content="index,follow" />
+
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Omkar Kyasti • Software Engineer Portfolio" />
+  <meta property="og:description" content="Python, Java, React.js, SQL • REST APIs • Spring Boot • CI/CD" />
+  <meta property="og:url" content="https://your-domain.example/" />
+  <meta property="og:image" content="assets/og-cover.jpg" />
+
+ 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Omkar Kyasti • Software Engineer Portfolio" />
+  <meta name="twitter:description" content="Python, Java, React.js, SQL • REST APIs • Spring Boot • CI/CD" />
+  <meta name="twitter:image" content="assets/og-cover.jpg" />
+
+ 
+  <link rel="icon" href="assets/favicon.png" />
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+ 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Omkar Kyasti",
+    "url": "https://your-domain.example/",
+    "sameAs": [
+      "https://github.com/Omkarkyasti",
+      "https://www.linkedin.com/in/omkar-kyasti-70ab7a296/",
+      "https://leetcode.com/u/omkar_kyasti/"
+    ],
+    "jobTitle": "Software Engineer",
+    "knowsAbout": ["Python","Java","React.js","SQL","REST APIs","Spring Boot","CI/CD"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: #121833;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --brand: #7c3aed;
+      --brand-2:#22d3ee;
+      --ring: rgba(124,58,237,.35);
+      --border: rgba(148,163,184,.15);
+      --soft:#0f162e;
+    }
+  
+    :root[data-theme="light"]{
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --muted:#475569;
+      --text:#0f172a;
+      --ring: rgba(124,58,237,.25);
+      --border: rgba(15,23,42,.12);
+      --soft:#f1f5f9;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:
+        radial-gradient(1200px 800px at 10% -10%, rgba(124,58,237,.15), transparent),
+        radial-gradient(1000px 600px at 110% 10%, rgba(34,211,238,.15), transparent),
+        var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,92%);margin-inline:auto}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:30;backdrop-filter: blur(8px);
+      background:linear-gradient(to bottom, color-mix(in oklab, var(--bg) 85%, transparent), color-mix(in oklab, var(--bg) 55%, transparent));
+      border-bottom:1px solid var(--border)
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.2px}
+    .brand .dot{width:10px;height:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));border-radius:50%;box-shadow:0 0 12px var(--brand)}
+    nav ul{display:flex;gap:.6rem;list-style:none;padding:0;margin:0;flex-wrap:wrap}
+    nav a{padding:.5rem .8rem;border-radius:999px;color:var(--muted);font-weight:700}
+    nav a:hover, nav a:focus{color:var(--text);background:rgba(124,58,237,.15);outline:none}
+    .cta{display:flex;gap:.6rem;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:999px;font-weight:700;border:1px solid rgba(124,58,237,.35);background:linear-gradient(180deg, rgba(124,58,237,.18), rgba(124,58,237,.05));box-shadow:0 0 0 0 var(--ring);transition:box-shadow .2s ease, transform .05s ease}
+    .btn:hover{box-shadow:0 0 0 6px var(--ring);transform:translateY(-1px)}
+    .btn.alt{border-color:rgba(34,211,238,.35);background:linear-gradient(180deg, rgba(34,211,238,.15), rgba(34,211,238,.05))}
+    .btn.ghost{background:transparent;border-color:var(--border)}
+    .mode-toggle{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--border);padding:.45rem .7rem;border-radius:999px;font-weight:700;cursor:pointer}
+
+    
+    section{padding:80px 0}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));border:1px solid var(--border);border-radius:16px}
+    .grid{display:grid;gap:1rem}
+
+   
+    .hero{display:grid;grid-template-columns: 1.1fr .9fr;gap:2rem;align-items:center}
+    .title{font-size:clamp(2rem,3vw + 1rem,3.2rem);line-height:1.05;font-weight:900;letter-spacing:.3px}
+    .subtitle{color:var(--muted);margin-top:.8rem;font-size:1.05rem}
+    .pillrow{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.1rem 0 1.6rem}
+    .pill{border:1px solid color-mix(in oklab, var(--border) 85%, var(--text) 15%);padding:.35rem .65rem;border-radius:999px;font-size:.9rem;color:color-mix(in oklab, var(--text) 80%, var(--muted))}
+    .hero-card{padding:1.2rem}
+    .hero-img{aspect-ratio: 1.1/1;background:radial-gradient(60% 60% at 70% 30%, rgba(34,211,238,.22), transparent), linear-gradient(135deg, rgba(124,58,237,.18), rgba(34,211,238,.12));border:1px dashed color-mix(in oklab, var(--border) 70%, var(--text) 5%);border-radius:20px;display:grid;place-items:center;overflow:hidden}
+    .hero-img img{width:100%;height:100%;object-fit:cover}
+
+    
+    .h{font-size:1.6rem;font-weight:900;margin-bottom:1rem}
+    .muted{color:var(--muted)}
+
+   
+    .skills{grid-template-columns: repeat(auto-fit,minmax(210px,1fr))}
+    .chip{padding:.5rem .7rem;border-radius:10px;border:1px solid var(--border);background:color-mix(in oklab, var(--soft) 70%, transparent);font-weight:600}
+
+   
+    .projects{grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))}
+    .project{padding:1rem;display:flex;flex-direction:column;gap:.6rem}
+    .project h3{margin:.2rem 0}
+    .project .stack{display:flex;flex-wrap:wrap;gap:.4rem}
+    .project img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;border:1px solid var(--border);background:var(--soft)}
+
+    
+    .timeline{position:relative;padding-left:1rem}
+    .timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:linear-gradient(var(--brand), var(--brand-2));border-radius:2px;opacity:.5}
+    .titem{position:relative;margin:0 0 1rem 0;padding-left:1rem}
+    .titem .dot{position:absolute;left:-2px;top:.3rem;width:12px;height:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));border-radius:50%;box-shadow:0 0 0 4px rgba(124,58,237,.18)}
+
+    
+    .gallery{display:grid;grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));gap:1rem}
+    .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid var(--border);background:var(--soft)}
+
+    
+    footer{padding:60px 0;color:var(--muted);text-align:center}
+
+    
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr} nav ul{gap:.3rem} }
+    .title {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--brand);
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span><span>Omkar Kyasti</span></div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+         
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certs">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta">
+        <a class="btn" href="okyasti.pdf" download>Download Resume</a>
+        <a class="btn" href="https://github.com/Omkarkyasti" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn alt" href="https://www.linkedin.com/in/omkar-kyasti-70ab7a296/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <button class="mode-toggle" id="modeToggle" type="button" aria-label="Toggle color theme">🌙☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="container" id="home" aria-labelledby="intro">
+      <div class="hero">
+        <div class="hero-card card">
+          <h1 class="title" id="intro">Hi, I'm Omkar 👋</h1>
+          <p class="subtitle">Aspiring Software Engineer • Python & Java Developer</p>
+          <div class="pillrow">
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">React.js</span>
+            <span class="pill">SQL</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">Spring Boot</span>
+            <span class="pill">CI/CD</span>
+          </div>
+          <p class="muted">Enthusiastic Software Engineer skilled in Python, Java, React.js, and SQL with exposure to RESTful APIs, Spring Boot, and CI/CD pipelines. Experienced in developing scalable web applications and working in agile environments.</p>
+          <div class="pillrow">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn alt" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-img card">
+          
+          <img src="assetshero.jpg" alt="Omkar Kyasti"/>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="container" id="about">
+      <h2 class="h">About Me</h2>
+      <p class="muted">I’m a passionate software engineer with experience building scalable web applications using Python, Java, and React.js. My goal is to design efficient, user-friendly, and data-driven solutions. I enjoy problem-solving, teamwork, and exploring new technologies like cloud computing and AI.</p>
+    </section>
+
+   
+    <section class="container" id="skills">
+      <h2 class="h">Skills</h2>
+      <div class="grid skills">
+        <div class="card" style="padding:1rem">
+          <h3>Languages</h3>
+          <div class="pillrow"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C++</span><span class="chip">SQL</span></div>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>Frameworks & Technologies</h3>
+          <div class="pillrow"><span class="chip">React.js</span><span class="chip">Spring Boot</span><span class="chip">.NET Core</span><span class="chip">Flask</span><span class="chip">Angular</span><span class="chip">REST APIs</span><span class="chip">Jest</span></div>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>Cloud & DevOps</h3>
+          <div class="pillrow"><span class="chip">Microsoft Azure</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">CI/CD</span><span class="chip">Apache Tomcat</span></div>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>Databases</h3>
+          <div class="pillrow"><span class="chip">MySQL</span><span class="chip">SQLite</span></div>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>Data Science & AI</h3>
+          <div class="pillrow"><span class="chip">Machine Learning</span><span class="chip">Deep Learning</span><span class="chip">Pandas</span><span class="chip">NumPy</span></div>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>Tools & Design</h3>
+          <div class="pillrow"><span class="chip">Git/GitHub</span><span class="chip">Figma</span><span class="chip">Debugging Tools</span></div>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>Soft Skills</h3>
+          <div class="pillrow"><span class="chip">Communication</span><span class="chip">Team Collaboration</span><span class="chip">Leadership</span><span class="chip">Project Management</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="projects">
+      <h2 class="h">Projects</h2>
+      <div class="grid projects">
+        <article class="card project">
+          <img src="sw.png" alt="Swiggy Clone" />
+          <h3>Swiggy Clone Website</h3>
+          <p class="muted">Full-stack food delivery app enabling 100+ simulated user sessions with real-time cart updates and authentication. Improved page load speed by 30% via optimized API calls.</p>
+          <div class="stack"><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">MySQL</span><span class="chip">HTML/CSS/JS</span></div>
+          <p>
+            <a class="btn" href="https://github.com/Omkarkyasti/Swiggy-clone" target="_blank" rel="noreferrer">View Code</a>
+            
+          </p>
+        </article>
+
+        <article class="card project">
+          <img src="Movie.png" alt="Movie Ticket Booking Application" />
+          <h3>Movie Ticket Booking Application</h3>
+          <p class="muted">Dynamic booking platform with secure login, seat selection, and booking confirmations. Enhanced UI responsiveness by 25% using React state management and modular components.</p>
+          <div class="stack"><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">MySQL</span></div>
+          <p>
+            <br>
+            <a class="btn" href="https://github.com/Omkarkyasti" target="_blank" rel="noreferrer">View Code</a>
+            
+          </p>
+        </article>
+
+        <article class="card project">
+          <img src="port1.jpeg" alt="Personal Portfolio v2" />
+          <h3>Personal Portfolio v2</h3>
+          <p class="muted">A modern, fully responsive portfolio with dark/light theme, SEO, OG/Twitter cards, and Formspree contact — the site you’re viewing now.</p>
+          <div class="stack"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+          <p>
+            <br>
+            <br>
+            <a class="btn" href="#" target="_blank" rel="noreferrer">View Code</a>
+            
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+
+   
+    <section class="container" id="experience">
+      <h2 class="h">Experience</h2>
+      <ol class="timeline">
+        <li class="titem card" style="padding:1rem">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Python Developer Intern — TECHPLEMENT <span class="muted"></span></h3>
+          <ul>
+            <li>Designed and implemented Python-based applications to solve real-world problems and improve functionality.</li><br>
+            <li>Applied OOP, data structures, and algorithms to enhance application efficiency.</li><br>
+            <li>Collaborated within a cross-functional team to debug, optimize, and deploy Python solutions.</li><br>
+            <li>Strengthened skills in problem-solving, Git, and agile practices.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+   
+    <section class="container" id="education">
+      <h2 class="h">Education</h2>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+        <div class="card" style="padding:1rem">
+          <h3>Master of Computer Applications</h3>
+          <p class="muted">Alliance University — CGPA: 8.2<br/>2024 – 2026</p>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>Bachelor of Computer Applications</h3>
+          <p class="muted">KLE RLS BCA College, Belagavi — CGPA: 7.8<br/>2021 – 2024</p>
+        </div>
+        <div class="card" style="padding:1rem">
+          <h3>PUC</h3>
+          <p class="muted">Tungal PU Science College, Bagalakot — 70%<br/>2019 – 2021</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="container" id="certs">
+  <h2 class="h">Certifications</h2>
+  <ul class="clean" style="list-style:none;padding:0;margin:0">
+    <li>
+      <a href="https://coursera.org/verify/your-python-cert-link" target="_blank" rel="noreferrer">
+        Python for Everybody — Coursera
+      </a>
+    </li>
+    <br>
+    <li>
+      <a href="https://coursera.org/verify/your-html-css-js-cert-link" target="_blank" rel="noreferrer">
+        HTML, CSS, and JavaScript for Web Developers — Coursera
+      </a>
+    </li>
+    <br>
+  
+    <li>
+      <a href="https://your-ml-nlp-cert-link" target="_blank" rel="noreferrer">
+        Machine Learning and NLP Basics
+      </a>
+    </li>
+    <br>
+
+    <li>
+      <a href="https://your-generative-ai-cert-link" target="_blank" rel="noreferrer">
+        Generative AI: Introduction and Applications
+      </a>
+    </li>
+    <br>
+
+    <li>
+      <a href="https://your-data-analysis-r-cert-link" target="_blank" rel="noreferrer">
+        Data Analysis with R
+      </a>
+    </li>
+    <br>
+
+    <li>
+      <a href="https://your-uipath-cert-link" target="_blank" rel="noreferrer">
+        UiPath — RPA Developer Foundation
+      </a>
+    </li>
+    <br>
+    <li>
+      <a href="https://your-cybersecurity-cert-link" target="_blank" rel="noreferrer">
+        Cyber Security Job Simulation-Deloitte
+      </a>
+    </li>
+  </ul>
+  <p class="muted" style="margin-top:.6rem"></p>
+</section>
+
+
+
+    <section class="container" id="contact">
+      <h2 class="h">Contact</h2>
+      <div class="card" style="padding:1rem;display:grid;gap:.9rem">
+        <p class="muted">Let’s build something great together.</p>
+
+       
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="grid" style="gap:.7rem">
+          <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.7rem">
+            <label class="grid" style="gap:.3rem">
+              <span>Name</span>
+              <input required name="name" type="text" placeholder="Your name" style="padding:.7rem;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text)">
+            </label>
+            <label class="grid" style="gap:.3rem">
+              <span>Email</span>
+              <input required name="email" type="email" placeholder="you@example.com" style="padding:.7rem;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text)">
+            </label>
+          </div>
+          <label class="grid" style="gap:.3rem">
+            <span>Message</span>
+            <textarea required name="message" rows="5" placeholder="How can I help?" style="padding:.7rem;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text)"></textarea>
+          </label>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <div class="pillrow">
+          <a class="btn" href="mailto:omkarkyasti9@gmail.com">Email</a>
+          <a class="btn" href="tel:+917349180509">Call</a>
+          <a class="btn alt" href="https://leetcode.com/u/omkar_kyasti/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Omkar Kyasti </div>
+  </footer>
+
+  <script>
+
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    const stored = localStorage.getItem('ok-theme');
+    if(stored){ root.setAttribute('data-theme', stored); }
+    else {
+      const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      root.setAttribute('data-theme', prefersLight ? 'light' : 'dark');
+    }
+    const btn = document.getElementById('modeToggle');
+    btn.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      const next = current === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('ok-theme', next);
+    });
+  </script>
+</body>
+</html>
